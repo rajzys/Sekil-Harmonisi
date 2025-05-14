@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="tr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Şekil Harmonisi</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div id="game-container">
+        <h1>Şekil Harmonisi</h1>
+        <div id="info-area">
+            <div id="level-display">Seviye: 1</div>
+            <div id="level-selector">
+                <button id="level-select-btn">Seviye Seç</button>
+                <div id="level-dropdown" class="level-dropdown">
+                    <!-- Seviyeler JavaScript ile doldurulacak -->
+                </div>
+            </div>
+            <div id="instructions">Verilen şekilleri kullanarak alanı kaplayın.</div>
+        </div>
+        <canvas id="game-canvas"></canvas>
+        <div id="shape-palette-container">
+            <h2>Kullanılacak Şekil:</h2>
+            <div id="shape-palette">
+                <!-- Geometrik şekil burada gösterilecek -->
+            </div>
+        </div>
+        <div id="controls">
+            <button id="check-solution-btn">Çözümü Kontrol Et</button>
+            <button id="reset-level-btn">Seviyeyi Sıfırla</button>
+            <button id="undo-btn">Geri Al</button>
+            <button id="next-level-btn" style="display: none;">Sonraki Seviye</button>
+        </div>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
